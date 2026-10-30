@@ -11,8 +11,8 @@ erDiagram
     STORES ||--o{ STORE_PRICING : "has pricing"
     PRODUCTS ||--o{ STORE_PRICING : "priced at"
     IMPORT_JOBS ||--o{ IMPORT_ROWS : "contains"
-    IMPORT_JOBS ..o{ AUDIT_EVENTS : "correlates via correlation_id"
-    STORE_PRICING ..o{ AUDIT_EVENTS : "audited via entity_key"
+    IMPORT_JOBS ||..o{ AUDIT_EVENTS : "correlates via correlation_id"
+    STORE_PRICING ||..o{ AUDIT_EVENTS : "audited via entity_key"
 
     STORES {
         int id PK

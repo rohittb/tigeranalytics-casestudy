@@ -60,8 +60,8 @@ erDiagram
     STORES ||--o{ STORE_PRICING : "has pricing (1:N)"
     PRODUCTS ||--o{ STORE_PRICING : "priced at (1:N)"
     IMPORT_JOBS ||--o{ IMPORT_ROWS : "stages rows (1:N)"
-    IMPORT_JOBS ..o{ AUDIT_EVENTS : "correlates via correlation_id"
-    STORE_PRICING ..o{ AUDIT_EVENTS : "audited via entity_key"
+    IMPORT_JOBS ||..o{ AUDIT_EVENTS : "correlates via correlation_id"
+    STORE_PRICING ||..o{ AUDIT_EVENTS : "audited via entity_key"
 ```
 
 ### Table Summary & Foreign Key Relationships
