@@ -1,0 +1,3 @@
+store_code,product_sku,country_code,currency_code,price
+STR-US-001,SKU-ELEC-1001,US,USD,210.00
+STR-US-001,SKU-ELEC-1003,US,USD,109.95
